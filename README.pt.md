@@ -2,7 +2,7 @@
 
 Este projeto Drupal consiste em duas classes principais para gerenciar termos de taxonomia em um site Drupal, permitindo a injeção de termos e suas traduções em taxonomias existentes ou novas. Além de adicionar os Termos automáticamente, lidando com Termos que possuem Translate.
 
-## Funcionalidades
+## Funcionalidades de Funções
 
 1. **TaxonomiesTermsGet**: Responsável por extrair taxonomias e termos de um tipo de conteúdo específico.
 2. **TaxonomyTermsInjector**: Responsável por injetar termos em taxonomias com suporte para traduções.
