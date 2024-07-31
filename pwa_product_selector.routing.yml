@@ -1,0 +1,15 @@
+pwa_product_selector.extract_taxonomies_and_terms:
+  path: '/admin/pwa-product-selector'
+  defaults:
+    _controller: 'Drupal\pwa_product_selector\Controller\PwaProductSelectorController::simplePage'
+    _title: 'Extract Taxonomies and Terms'
+  requirements:
+    _permission: 'administer site configuration'
+
+pwa_product_selector.tax_selection:
+  path: '/admin/config/pwa-product-selector/tax-selection'
+  defaults:
+    _form: '\Drupal\pwa_product_selector\Form\TaxForm'
+    _title: 'Tax Selection'
+  requirements:
+    _permission: 'administer site configuration'

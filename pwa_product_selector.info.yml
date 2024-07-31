@@ -1,0 +1,9 @@
+name: 'PWA Product Selector'
+type: module
+description: 'Módulo para extrair e exibir termos de taxonomias.'
+core_version_requirement: ^9 ||^10
+package: Custom
+dependencies:
+  - taxonomy
+  - node
+version: 1.0.0

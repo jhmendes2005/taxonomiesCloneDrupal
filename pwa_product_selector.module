@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function YOUR_THEME_theme() {
+  return [
+    'nestle_user_uk' => [
+      'variables' => ['example' => NULL],
+    ],
+  ];
+}

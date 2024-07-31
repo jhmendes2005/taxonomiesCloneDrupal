@@ -1,0 +1,14 @@
+services:
+  pwa_product_selector.language_getter:
+    class: 'Drupal\pwa_product_selector\Functions\LanguagesGet'
+    arguments: ['@language_manager']
+    tags:
+      - { name: 'container.service_provider' }
+
+  pwa_product_selector.taxonomies_terms_get:
+    class: Drupal\pwa_product_selector\Functions\TaxonomiesTermsGet
+    arguments: ['@logger.factory', '@entity_field.manager', '@language_manager', '@entity_type.manager', '@pwa_product_selector.language_getter']
+
+  pwa_product_selector.taxonomy_terms_injector:
+    class: 'Drupal\pwa_product_selector\Functions\TaxonomyTermsInjector'
+    arguments: ['@logger.factory', '@entity_type.manager']
